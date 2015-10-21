@@ -53,6 +53,27 @@ function  doIt(theExpression) {
 		}, 16);	
 	}	
 
+	if(total == 3405) {
+		// var sound = new Audio("spaceship.m4a");
+		// sound.play();
+		var element = document.getElementById('digital-crafts'),
+			left = -500,
+			lastFrame = +new Date,
+			timer;
+
+		// Move element right 600 px
+		timer = setInterval(function() {
+			var now = new Date,
+			deltaT = now - lastFrame;
+			element.style.left = (left += 5 * deltaT / 16) + "px";
+			lastFrame = now;
+			// clear the time and stop animation
+			if(left > 3000) {
+				clearInterval(timer);
+			}
+		}, 16);	
+	}
+
 	// total = eval(theExpression);
 	Calc.Input.value = total;
 }
