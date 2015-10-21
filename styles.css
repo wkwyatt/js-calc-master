@@ -123,6 +123,12 @@
 		left: -1000px;
 	}
 
+	#sixty-nine{
+		position: fixed;
+		top: 50px;
+		left: -1000px;
+	}
+
 	#google, #dc{
 		font-size: 30px;
 		position: absolute;
