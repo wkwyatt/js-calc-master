@@ -33,8 +33,13 @@ function  doIt(theExpression) {
 	}
 
 	if(total == 69) {
-		// var sound = new Audio("spaceship.m4a");
-		// sound.play();
+		var sound = new Audio("Giggity.mp3");
+		setTimeout(function() {
+			sound.play(); 	
+		}, 1200)
+		setTimeout(function() {
+			sound.play(); 	
+		}, 1200)
 		var element = document.getElementById('sixty-nine'),
 			left = -500,
 			lastFrame = +new Date,
@@ -54,8 +59,8 @@ function  doIt(theExpression) {
 	}	
 
 	if(total == 3405) {
-		// var sound = new Audio("spaceship.m4a");
-		// sound.play();
+		var sound = new Audio("Voices-from-heaven-2.mp3");
+		sound.play();
 		var element = document.getElementById('digital-crafts'),
 			left = -500,
 			lastFrame = +new Date,
@@ -65,7 +70,7 @@ function  doIt(theExpression) {
 		timer = setInterval(function() {
 			var now = new Date,
 			deltaT = now - lastFrame;
-			element.style.left = (left += 5 * deltaT / 16) + "px";
+			element.style.left = (left += 4 * deltaT / 16) + "px";
 			lastFrame = now;
 			// clear the time and stop animation
 			if(left > 3000) {
